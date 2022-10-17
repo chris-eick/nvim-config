@@ -16,12 +16,12 @@ o.shiftwidth = 2
 o.autoindent = true
 o.number = true
 o.listchars = {
-    tab = '>-',
-    space = '·'
+    tab = ">-",
+    space = "·",
 }
 o.list = true
 o.relativenumber = true
-o.wildmode = {longest, list}
+o.wildmode = { longest, list }
 o.splitright = true
 o.splitbelow = true
 o.syntax = on
@@ -30,9 +30,9 @@ o.clipboard = unnamedplus
 o.cursorline = true
 o.ttyfast = true
 
-vim.cmd [[
+vim.cmd([[
     filetype plugin indent on
-]]
+]])
 
-require('plugins')
-require('commands')
+require("plugins")
+require("commands")
