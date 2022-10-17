@@ -5,6 +5,7 @@ return require("packer").startup(function(use)
     use("lalitmee/cobalt2.nvim")
 
     use("ryanoasis/vim-devicons")
+
     use("kyazdani42/nvim-web-devicons")
     use("kyazdani42/nvim-tree.lua")
 
@@ -25,6 +26,8 @@ return require("packer").startup(function(use)
         "nvim-telescope/telescope.nvim",
         tag = "0.1.0",
     })
+    use({ "nvim-telescope/telescope-ui-select.nvim" })
+    use({ "mrjones2014/legendary.nvim" })
 
     use({
         "nvim-treesitter/nvim-treesitter",
