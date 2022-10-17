@@ -6,7 +6,6 @@ vim.g.loaded_netrwPlugin = 1
 o.showmatch = true
 o.showcmd = true
 o.ignorecase = true
-o.mouse = v
 o.hlsearch = true
 o.incsearch = true
 o.tabstop = 2
@@ -21,12 +20,12 @@ o.listchars = {
 }
 o.list = true
 o.relativenumber = true
-o.wildmode = { longest, list }
+o.wildmode = { "longest", "list" }
 o.splitright = true
 o.splitbelow = true
-o.syntax = on
-o.mouse = a
-o.clipboard = unnamedplus
+o.syntax = "on"
+o.mouse = "a"
+o.clipboard = "unnamedplus"
 o.cursorline = true
 o.ttyfast = true
 
