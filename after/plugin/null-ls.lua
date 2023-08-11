@@ -7,6 +7,7 @@ nls.setup({
         builtins.completion.spell,
         builtins.formatting.prettier,
         builtins.formatting.stylua,
+        builtins.formatting.taplo,
         builtins.formatting.rustfmt,
     },
 })

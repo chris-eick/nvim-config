@@ -13,7 +13,6 @@ return require("packer").startup(function(use)
 
     use("natecraddock/workspaces.nvim")
 
-    use("liuchengxu/vim-clap")
     use("mhinz/vim-startify")
 
     use("romgrk/barbar.nvim")
@@ -31,14 +30,12 @@ return require("packer").startup(function(use)
     use({ "nvim-telescope/telescope-ui-select.nvim" })
     use({ "mrjones2014/legendary.nvim" })
 
-    use("williamboman/mason.nvim")
-    use("williamboman/mason-lspconfig.nvim")
-
     use("neovim/nvim-lspconfig")
     use("simrat39/rust-tools.nvim")
 
     use({
         "nvim-treesitter/nvim-treesitter",
+        version = "0.9.0",
         run = ":TSUpdate",
     })
 
