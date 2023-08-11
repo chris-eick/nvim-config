@@ -14,6 +14,11 @@ return require("packer").startup(function(use)
     use("kyazdani42/nvim-tree.lua")
     use("natecraddock/workspaces.nvim")
     use("mhinz/vim-startify")
+    use({
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.0",
+    })
+    use({ "nvim-telescope/telescope-ui-select.nvim" })
 
     -- Navigation
     use("ggandor/leap.nvim")
@@ -30,11 +35,6 @@ return require("packer").startup(function(use)
 
     -- Help and Discovery Tools
     use("folke/which-key.nvim")
-    use({
-        "nvim-telescope/telescope.nvim",
-        tag = "0.1.0",
-    })
-    use({ "nvim-telescope/telescope-ui-select.nvim" })
     use({ "mrjones2014/legendary.nvim" })
 
     -- Language Specific
