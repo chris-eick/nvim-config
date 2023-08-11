@@ -17,6 +17,7 @@ o.number = true
 o.listchars = {
     tab = ">-",
     space = "·",
+    trail = "~",
 }
 o.list = true
 o.relativenumber = true
@@ -35,3 +36,4 @@ vim.cmd([[
 
 require("plugins")
 require("commands")
+require("diagnostics")
