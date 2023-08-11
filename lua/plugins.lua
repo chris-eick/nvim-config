@@ -20,6 +20,8 @@ return require("packer").startup(function(use)
     use("nvim-lualine/lualine.nvim")
     use("RRethy/vim-illuminate")
 
+    use("folke/which-key.nvim")
+
     use("nvim-lua/plenary.nvim")
     use("jose-elias-alvarez/null-ls.nvim")
     use({
