@@ -1,3 +1,10 @@
+require("barbar").setup({
+    animation = false,
+    icons = {
+        buffer_index = true,
+    },
+})
+
 -- Buffer Navigation
 vim.keymap.set("n", "<A-,>", "<Cmd>BufferPrevious<CR>")
 vim.keymap.set("n", "<A-.>", "<Cmd>BufferNext<CR>")
