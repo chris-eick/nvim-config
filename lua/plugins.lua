@@ -2,8 +2,7 @@ require("plugins_init")
 
 return require("packer").startup(function(use)
     -- Visuals
-    use("tjdevries/colorbuddy.nvim")
-    use("lalitmee/cobalt2.nvim")
+    use({ "catppuccin/nvim", as = "catppuccin" })
     use("nvim-lualine/lualine.nvim")
 
     -- Icons
@@ -16,9 +15,17 @@ return require("packer").startup(function(use)
     use("mhinz/vim-startify")
     use({
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.0",
+        tag = "0.1.4",
     })
     use({ "nvim-telescope/telescope-ui-select.nvim" })
+
+    -- Edit History
+    use({
+        "jiaoshijie/undotree",
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
 
     -- Navigation
     use("ggandor/leap.nvim")
@@ -38,7 +45,9 @@ return require("packer").startup(function(use)
     use({ "mrjones2014/legendary.nvim" })
 
     -- Language Specific
+    use("rust-lang/rust.vim")
     use("simrat39/rust-tools.nvim")
+    use("ziglang/zig.vim")
 
     -- Completion framework:
     use("hrsh7th/nvim-cmp")

@@ -1,12 +1,13 @@
 require("nvim-treesitter.configs").setup({
     ensure_installed = {
         "lua",
+        "markdown_inline",
+        "markdown",
         "rust",
         "toml",
-        "markdown",
-        "markdown_inline",
-        "vue",
         "typescript",
+        "vue",
+        "zig",
     },
     auto_install = true,
     highlight = {

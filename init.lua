@@ -2,6 +2,8 @@ local o = vim.opt
 
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
+vim.g.mapleader = " "
+vim.keymap.set("n", "\\", "<Space>", { remap = true })
 
 o.showmatch = true
 o.showcmd = true
